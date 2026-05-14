@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kreeda-Prerana Scout</string>
+    <string name="btn_batch_add">Batch Add Students</string>
+    <string name="title_batch_add">Batch Add Students</string>
+    <string name="hint_batch_names">Enter names (one per line)</string>
+    <string name="label_default_sport">Default Sport</string>
+    <string name="label_default_class">Default Class</string>
+    <string name="label_default_age">Default Age</string>
+    <string name="action_import">Import All</string>
+    <string name="msg_batch_success">Batch added successfully!</string>
+    <string name="msg_empty_names">Please enter at least one name.</string>
+</resources>

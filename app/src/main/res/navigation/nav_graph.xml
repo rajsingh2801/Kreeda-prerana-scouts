@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.HomeFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_batchAddStudentsFragment"
+            app:destination="@id/batchAddStudentsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/batchAddStudentsFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.BatchAddStudentsFragment"
+        android:label="Batch Add Students"
+        tools:layout="@layout/fragment_batch_add_students" />
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.StudentListFragment"
+        android:label="Students"
+        tools:layout="@layout/fragment_student_list">
+        <action
+            android:id="@+id/action_studentListFragment_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.LeaderboardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.AddStudentFragment"
+        android:label="Add Student"
+        tools:layout="@layout/fragment_add_student" />
+
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.StudentDetailFragment"
+        android:label="Student Details"
+        tools:layout="@layout/fragment_student_detail">
+        <argument
+            android:name="studentId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_studentDetailFragment_to_logTrialFragment"
+            app:destination="@id/logTrialFragment" />
+        <action
+            android:id="@+id/action_studentDetailFragment_to_talentCurveFragment"
+            app:destination="@id/talentCurveFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/logTrialFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.LogTrialFragment"
+        android:label="Log Trial"
+        tools:layout="@layout/fragment_log_trial">
+        <argument
+            android:name="studentId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/talentCurveFragment"
+        android:name="com.example.kreedaprerana.ui.fragments.TalentCurveFragment"
+        android:label="Talent Curve"
+        tools:layout="@layout/fragment_talent_curve">
+        <argument
+            android:name="studentId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
