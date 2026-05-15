@@ -71,3 +71,4 @@ MindMatrix VTU Internship Program 2026
 - Added 100m Sprint Timer
 - - Integrated Gemini AI Coach for feedback
 - Fixed talent curve calculation bug
+### Setup Guide
