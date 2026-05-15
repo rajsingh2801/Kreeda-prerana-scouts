@@ -72,3 +72,4 @@ MindMatrix VTU Internship Program 2026
 - Added 100m Sprint Timer
 - ### Setup Guide
 1. Add API key in local.properties
+- Fixed talent curve calculation bug
